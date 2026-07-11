@@ -1,14 +1,437 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MoneyFan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyFan - Plateforme de Paiement et Commerce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MoneyFan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#payment">Paiements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn-login">Se connecter</button>
+                <button class="btn-signup">S'inscrire</button>
+            </div>
+        </div>
+    </nav>
 
-<h1>Bienvenue sur MoneyFan</h1>
-<p>La plateforme de vente de produits numériques.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur MoneyFan</h1>
+            <p>La plateforme de paiement et commerce la plus rapide et sécurisée en Afrique</p>
+            <button class="btn-primary">Commencer maintenant</button>
+        </div>
+    </section>
 
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Nos Fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Paiements Sécurisés</h3>
+                    <p>Effectuez vos transactions en toute confiance avec notre technologie de chiffrement SSL avancée.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Livraison Rapide</h3>
+                    <p>Recevez vos commandes en moins de 24 heures dans votre région.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Protection Garantie</h3>
+                    <p>Chaque achat est protégé par notre garantie satisfaction client.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Meilleurs Prix</h3>
+                    <p>Bénéficiez de réductions exclusives et de cashback sur vos achats.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Application Mobile</h3>
+                    <p>Téléchargez notre app et magasinez n'importe où, n'importe quand.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Support 24/7</h3>
+                    <p>Notre équipe est toujours là pour vous aider et répondre à vos questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Téléphone+Premium" alt="Produit 1">
+                    <h3>Téléphone Premium</h3>
+                    <p class="price">9,999 F</p>
+                    <p class="description">Dernière génération avec caméra 48MP</p>
+                    <button class="btn-add-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Laptop+Ultra" alt="Produit 2">
+                    <h3>Laptop Ultra</h3>
+                    <p class="price">24,999 F</p>
+                    <p class="description">SSD 512GB, 16GB RAM</p>
+                    <button class="btn-add-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Casque+Audio" alt="Produit 3">
+                    <h3>Casque Audio</h3>
+                    <p class="price">1,999 F</p>
+                    <p class="description">Bluetooth 5.0, 30h d'autonomie</p>
+                    <button class="btn-add-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Smartwatch+Elite" alt="Produit 4">
+                    <h3>Smartwatch Elite</h3>
+                    <p class="price">3,499 F</p>
+                    <p class="description">Suivi santé intégré, GPS</p>
+                    <button class="btn-add-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section id="payment" class="payment-methods">
+        <div class="container">
+            <h2>Moyens de Paiement Disponibles en Afrique</h2>
+            <p class="payment-intro">Payez facilement avec votre méthode préférée</p>
+            
+            <!-- Payment Categories -->
+            <div class="payment-categories">
+                <!-- Mobile Money -->
+                <div class="payment-category">
+                    <h3>📱 Portefeuilles Mobiles (Mobile Money)</h3>
+                    <div class="payment-grid">
+                        <div class="payment-item">
+                            <div class="payment-logo">🟠</div>
+                            <h4>Orange Money</h4>
+                            <p>Sénégal, Mali, Côte d'Ivoire, Cameroun</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🟢</div>
+                            <h4>MTN Mobile Money</h4>
+                            <p>Cameroun, Côte d'Ivoire, Burkina Faso, Ghana</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🔵</div>
+                            <h4>Moov Money</h4>
+                            <p>Togo, Benin, Côte d'Ivoire, Cameroun</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">💜</div>
+                            <h4>Airtel Money</h4>
+                            <p>Kenya, Tanzanie, Ouganda, Zambie, Zimbabwe</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🟡</div>
+                            <h4>Vodafone Cash</h4>
+                            <p>Ghana, Égypte</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">⚪</div>
+                            <h4>Safaricom M-Pesa</h4>
+                            <p>Kenya, Tanzanie</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Wallets -->
+                <div class="payment-category">
+                    <h3>💳 Portefeuilles Numériques</h3>
+                    <div class="payment-grid">
+                        <div class="payment-item">
+                            <div class="payment-logo">👤</div>
+                            <h4>Wave</h4>
+                            <p>Sénégal, Mali, Côte d'Ivoire, Cameroun</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🔐</div>
+                            <h4>Flutterwave</h4>
+                            <p>Plus de 30 pays en Afrique</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">💎</div>
+                            <h4>Paypal</h4>
+                            <p>Afrique du Sud, Égypte, Nigeria, Kenya</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🟣</div>
+                            <h4>Skrill</h4>
+                            <p>Disponible dans plusieurs pays africains</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">📊</div>
+                            <h4>Wise (TransferWise)</h4>
+                            <p>Transferts internationaux, Afrique du Sud</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🌐</div>
+                            <h4>Stripe Africa</h4>
+                            <p>Nigeria, Ghana, Kenya, Afrique du Sud</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Transfers -->
+                <div class="payment-category">
+                    <h3>🏦 Virements Bancaires</h3>
+                    <div class="payment-grid">
+                        <div class="payment-item">
+                            <div class="payment-logo">🏛️</div>
+                            <h4>SWIFT International</h4>
+                            <p>Transferts internationaux sécurisés</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🌍</div>
+                            <h4>Banques Locales</h4>
+                            <p>Toutes les banques africaines partenaires</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">💰</div>
+                            <h4>USSD Banking</h4>
+                            <p>Sans smartphone, via USSD *code#</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">📱</div>
+                            <h4>Mobile Banking Apps</h4>
+                            <p>Applications bancaires mobiles locales</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🔄</div>
+                            <h4>ACH/Paiements Automatisés</h4>
+                            <p>Paiements récurrents et automatisés</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🤝</div>
+                            <h4>Mowali (Orange/MTN)</h4>
+                            <p>Paiement entre les opérateurs</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cryptocurrencies -->
+                <div class="payment-category">
+                    <h3>₿ Cryptomonnaies</h3>
+                    <div class="payment-grid">
+                        <div class="payment-item">
+                            <div class="payment-logo">🟠</div>
+                            <h4>Bitcoin</h4>
+                            <p>Accepté dans toute l'Afrique</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">⚪</div>
+                            <h4>Ethereum</h4>
+                            <p>Contrats intelligents et paiements</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🟡</div>
+                            <h4>Stablecoin (USDC, USDT)</h4>
+                            <p>Valeur stable, moins volatile</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🌟</div>
+                            <h4>Binance Coin</h4>
+                            <p>Via échange Binance Africa</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">💳</div>
+                            <h4>Celo</h4>
+                            <p>Crypto optimisée pour l'Afrique</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🔵</div>
+                            <h4>Polygon</h4>
+                            <p>Solutions blockchain scaling</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternative Methods -->
+                <div class="payment-category">
+                    <h3>🎁 Autres Méthodes</h3>
+                    <div class="payment-grid">
+                        <div class="payment-item">
+                            <div class="payment-logo">🏪</div>
+                            <h4>Paiement à la Livraison (Cash)</h4>
+                            <p>Payez en espèces à la réception</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🎫</div>
+                            <h4>Cartes Prépayées</h4>
+                            <p>Visa, Mastercard prépayées</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🏧</div>
+                            <h4>Carte Bancaire</h4>
+                            <p>Visa et Mastercard classiques</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🎟️</div>
+                            <h4>Chèques</h4>
+                            <p>Pour les montants importants</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">🔐</div>
+                            <h4>Google Pay / Apple Pay</h4>
+                            <p>Paiement mobile sécurisé</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                        <div class="payment-item">
+                            <div class="payment-logo">💸</div>
+                            <h4>Remittance Services</h4>
+                            <p>Western Union, MoneyGram, etc.</p>
+                            <span class="payment-status">✅ Actif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Info -->
+            <div class="payment-info">
+                <div class="info-box">
+                    <h4>🔒 Sécurité Garantie</h4>
+                    <p>Tous les paiements sont chiffrés avec le standard SSL 256-bit</p>
+                </div>
+                <div class="info-box">
+                    <h4>⚡ Instantané</h4>
+                    <p>Confirmation de paiement en moins de 30 secondes</p>
+                </div>
+                <div class="info-box">
+                    <h4>🌍 Sans Frontières</h4>
+                    <p>Payez depuis n'importe quel pays africain</p>
+                </div>
+                <div class="info-box">
+                    <h4>💬 Support 24/7</h4>
+                    <p>Aide en cas de problème avec votre paiement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Inscrivez-vous à notre newsletter</h2>
+            <p>Recevez les meilleures offres directement dans votre boîte mail</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn-primary">S'inscrire</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📍 Adresse</h3>
+                        <p>123 Rue du Commerce, Dakar, Sénégal</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Téléphone</h3>
+                        <p>+221 77 123 45 67</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>support@moneyfan.sn</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux Sociaux</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MoneyFan. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
